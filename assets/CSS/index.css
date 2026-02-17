@@ -48,6 +48,22 @@ h1 {
     font-weight: 900;
 }
 
+h2 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p {
+    color: var(--accent-color);
+}
+
 .text-color {
     color: var(--primary-color);
 }
@@ -56,16 +72,21 @@ h1 {
     /* 1200px */
     width: 75rem;
     margin: 0 auto;
+    padding: 80px 0;
+
 }
 
 .flex {
     display: flex;
 }
+.margin-auto{
+    margin: 0 auto;
+}
 
 .btn-primary {
     cursor: pointer;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: var(--body-fs);
+    font-weight: 700;
     padding: 8px 16px;
     color: var(--white);
     border-radius: var(--b-radius);
@@ -95,7 +116,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+
     /* border: 2px solid green; */
     flex: 1;
 }
@@ -116,7 +137,7 @@ h1 {
 
 /* Navbar button */
 .nav-btn {
-    font-size: 20px;
+    font-size: var(--body-fs);
     padding: 8px 16px;
     color: var(--primary-color);
     background-color: transparent;
@@ -129,7 +150,7 @@ h1 {
 /* ===== Hero Section Style ===== */
 .hero {
     background-color: var(--hero-bgc);
-    padding: 80px 0;
+    /* padding: 80px 0; */
 }
 
 .top-div {
@@ -147,7 +168,7 @@ h1 {
 
 .pera-hero {
     padding: 24px 0;
-    font-size: 20px;
+    max-width: 567px;
     color: var(--accent-color);
 }
 
@@ -182,12 +203,187 @@ h1 {
     color: var(--accent-color);
 }
 
+/* ===== Why Us ===== */
+.why_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+
+.whyUs_img_container {
+    flex: 1;
+}
+
+.whyUs_img_container img {
+    border-radius: var(--b-radius);
+    height: 541px;
+    width: 576px;
+    display: block;
+    object-fit: cover;
+}
+
+.why_us_content {
+    flex: 1;
+}
+
+.why_us_divider {
+    height: 4px;
+    margin: 1rem 0;
+    max-width: 57px;
+    background-color: var(--primary-color);
+}
+
+.why_us_list {
+    width: 493px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.why_us_list li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    line-height: 1.5;
+    gap: 16px;
+}
+
+.why_us_list i {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+/* ===== Sponsors ===== */
+.sponsors {
+    /* overflow: hidden; */
+    white-space: nowrap;
+    position: relative;
+    padding: 24px 400px;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.sponsors_motion {
+    display: flex;
+    gap: 80px;
+    width: max-content;
+    justify-content: space-between;
+    animation: scroll 10s linear infinite;
+}
+
+.sponsors_motion:hover {
+    animation-play-state: paused;
+}
+
+.sponsor-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.sponsor-item img {
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* ===== Affiliate Section Style ===== */
+.affiliate_container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.affiliate_heading {
+    text-align: center;
+    width: 762px;
+    margin: 0 auto;
+}
+
+.affiliate_heading>p {
+    padding: 10px 0 55px;
+}
+
+.card_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+
+
+.card_content {
+    position: relative;
+    margin-top: 187px;
+    background-color: var(--card-bgc);
+    border-radius: var(--b-radius);
+    padding: 80px 24px 24px;
+    width: 387px;
+}
+
+.card_img {
+    position: absolute;
+    top: -200px;
+    left: 25px;
+}
+
+.card_img img {
+    width: 339px;
+    border-radius: 4px;
+}
+
+.card_details h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* ===== Get Paid For Customer ===== */
+.get_paid> h4,
+.get_paid >p{
+    width: 750px;
+    margin: 0 auto;
+    color: var(--white);
+}
+.get_paid> h4{
+    padding: 80px 0 24px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.get_paid{
+    background-image: url('../images/solar_play-bold.jpg');
+    height: 519px;
+    text-align: center;
+    
+
+}
+
+
+
+
+
 
 @media only screen and (max-width:600px) {
     :root {
         --title-fs: 2rem;
         /* 32px */
-        --sub-title-fs: 1.25rem;
+        --sub-title-fs: 1rem;
         /* 20px  */
     }
 
@@ -202,6 +398,11 @@ h1 {
         font-size: var(--title-fs);
     }
 
+    .hero {
+        background-color: var(--hero-bgc);
+        padding: 48 px 0;
+    }
+
 
     .header>div:last-child {
         display: none;
@@ -214,9 +415,63 @@ h1 {
 
     .top-div {
         flex-direction: column-reverse;
-        justify-content: start;
-        padding-bottom: 48px;
         text-align: center;
+        /* gap: 32px; */
     }
+
+    .right-div {
+        /* padding: 0 40px; */
+        /* height: auto; */
+        grid-template-columns: repeat(2, 200px);
+        /* grid-template-rows: auto; */
+    }
+
+    .right-div img:nth-child(1),
+    .right-div img:nth-child(3) {
+        grid-row: span 1;
+        height: 200px;
+    }
+
+    .why_us {
+        flex-direction: column;
+    }
+
+    .whyUs_img_container img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .why_us_list {
+        width: 360px;
+    }
+
+    .sponsors {
+        gap: 6px;
+
+        padding: 24px 40px;
+
+    }
+
+    .sponsors_motion {
+        display: flex;
+        gap: 20px;
+        width: max-content;
+        justify-content: space-between;
+        animation: scroll 10s linear infinite;
+    }
+
+    .sponsors_motion:hover {
+        animation-play-state: paused;
+    }
+
+    .sponsor-item {
+        font-size: 1rem;
+    }
+
+    .sponsor-item img {
+        width: 20px;
+        height: 20px;
+    }
+
 
 }
