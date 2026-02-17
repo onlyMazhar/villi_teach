@@ -79,7 +79,8 @@ p {
 .flex {
     display: flex;
 }
-.margin-auto{
+
+.margin-auto {
     margin: 0 auto;
 }
 
@@ -304,10 +305,10 @@ p {
 
 
 /* ===== Affiliate Section Style ===== */
-.affiliate_container{
-display: flex;
-flex-direction: column;
-justify-content: center;
+.affiliate_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .affiliate_heading {
@@ -354,28 +355,97 @@ justify-content: center;
 }
 
 /* ===== Get Paid For Customer ===== */
-.get_paid> h4,
-.get_paid >p{
+.section_bg {
+    background-color: #FAFAFA;
+    padding: 80px 0;
+}
+
+.get_paid>h4,
+.get_paid>p {
     width: 750px;
     margin: 0 auto;
     color: var(--white);
 }
-.get_paid> h4{
+
+.get_paid>h4 {
     padding: 80px 0 24px;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
-.get_paid{
+.get_paid {
     background-image: url('../images/solar_play-bold.jpg');
     height: 519px;
     text-align: center;
-    
+}
+
+.get_paid_second {
+    text-align: center;
+
+
+}
+
+.get_paid_second h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 930px;
+    margin: 0 auto;
+    padding: 48px 0 24px;
+}
+
+/* ===== Partner Section Styles */
+.partner_section {
+    display: flex;
+    gap: 48px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partner_content {
+    width: 700px;
+}
+
+.partner_content>p {
+    padding: 10px 0 24px;
+    width: 565px;
+}
+
+.partner_img_container {
+    position: relative;
+}
+
+.partner_img_container>img {
+    height: 541px;
+    width: 429px;
+    object-fit: cover;
+    border-radius: var(--b-radius);
+}
+
+.bg_image {
+    position: absolute;
+    top: 45%;
+    right: 45%;
+    height: 20px;
+    width: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    background-image: url("../images/playIcon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
 
+/* ===== Gallery Section Styles ===== */
 
+.gallery_section{
+    text-align: center;
+    gap: 10px;
+}
+.gallery_img_container{
+
+}
 
 
 
