@@ -1,4 +1,4 @@
-/* =====  ===== */
+/* ===== google font ===== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* ===== Global Variables ===== */
@@ -17,12 +17,9 @@
     --font-sub-title: 'Poppins', sans-serif;
 
     /* ===== font size  ===== */
-    --title-fs: 3.5rem;
-    /* 56px */
-    --sub-title-fs: 1.5rem;
-    /* 24px  */
-    --body-fs: 1rem;
-    /* 16px */
+    --title-fs: 3.5rem;        /* 56px */
+    --sub-title-fs: 1.5rem;    /* 24px */
+    --body-fs: 1rem;           /* 16px */
 
     /* ===== button radius ===== */
     --b-radius: 8px;
@@ -73,7 +70,6 @@ p {
     width: 75rem;
     margin: 0 auto;
     padding: 80px 0;
-
 }
 
 .flex {
@@ -98,28 +94,23 @@ p {
 
 
 
-
 /* ===== Navbar ===== */
 .header {
     display: flex;
-    padding: 16px 0;
+    padding: 16px 0 !important;
     justify-content: space-between;
     /* border: 2px solid red; */
     gap: 32px;
     align-items: center;
 }
 
-.header>div {
-    justify-self: end;
+.mobile-menu-icon {
+    display: none;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-    /* border: 2px solid green; */
-    flex: 1;
 }
 
 .navbar>ul {
@@ -151,14 +142,12 @@ p {
 /* ===== Hero Section Style ===== */
 .hero {
     background-color: var(--hero-bgc);
-    /* padding: 80px 0; */
 }
 
 .top-div {
     display: flex;
     gap: 50px;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
     padding-bottom: 48px;
 }
@@ -323,8 +312,11 @@ p {
 
 .card_container {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     margin-bottom: 24px;
+    width: max-content;
+    animation: infinite-scroll 30s linear infinite;
 }
 
 
@@ -375,14 +367,15 @@ p {
 
 .get_paid {
     background-image: url('../images/solar_play-bold.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 519px;
     text-align: center;
 }
 
 .get_paid_second {
     text-align: center;
-
-
 }
 
 .get_paid_second h4 {
@@ -396,6 +389,7 @@ p {
 /* ===== Partner Section Styles */
 .partner_section {
     display: flex;
+    flex-direction: row;
     gap: 48px;
     flex-direction: row;
     justify-content: space-between;
@@ -433,7 +427,6 @@ p {
     background-image: url("../images/playIcon.svg");
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 
@@ -469,8 +462,7 @@ p {
     animation: infinite-scroll 30s linear infinite;
 }
 
-.testimoni-wrapper {
-
+.wrapper {
     overflow: hidden;
 }
 
@@ -516,6 +508,7 @@ p {
 
 .faq-container {
     display: flex;
+    flex-direction: row;
     gap: 80px;
 }
 
@@ -532,8 +525,6 @@ p {
     margin-bottom: 25px;
     color: #333;
 }
-
-
 
 /* Right Side */
 .faq-right {
@@ -588,6 +579,7 @@ p {
 
 .contact-wrapper {
     display: flex;
+    flex-direction: row;
     gap: 60px;
     align-items: center;
 }
@@ -623,11 +615,12 @@ p {
     border-radius: 50%;
     background-color: var(--primary-color)
 }
-.contact-box > div {
+
+.contact-box>div {
     display: flex;
     flex-direction: column;
     gap: 8px;
-   padding-top: 25px;
+    padding-top: 25px;
 }
 
 .contact-right {
@@ -664,7 +657,6 @@ form textarea {
     margin-bottom: 12px;
     border: 1px solid #ccc;
     border-radius: var(--b-radius);
- 
 }
 
 .form-error {
@@ -673,23 +665,24 @@ form textarea {
     margin-top: 5px;
 }
 
-.form-btn{
+.form-btn {
     width: 100%;
 }
 
 /* ===== Footer ===== */
 .footer {
     background-color: var(--footer-bgc);
-    color: var(--white); 
+    color: var(--white);
 }
 
 .footer-top {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-     width: 75rem;;
-     padding: 80px 0 65px;
+    width: 75rem;
+    padding: 80px 0 65px;
     /* gap: 60px; */
-     margin: 0 auto;
+    margin: 0 auto;
 }
 
 .footer-col {
@@ -740,7 +733,7 @@ form textarea {
 /* Subscribe */
 .footer-subscribe {
     display: flex;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: var(--b-radius);
     overflow: hidden;
     margin-top: 15px;
@@ -764,7 +757,7 @@ form textarea {
 
 /* Bottom */
 .footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 40px;
     padding: 20px 0;
     display: flex;
@@ -789,10 +782,6 @@ form textarea {
 
 
 
-
-
-
-
 @media only screen and (max-width:600px) {
     :root {
         --title-fs: 2rem;
@@ -804,17 +793,81 @@ form textarea {
     .container {
         max-width: 90%;
         width: 32rem;
+        padding: 48px 0;
         margin: 0 auto;
     }
 
+    h1 {
+        color: var(--secondary-color);
+        font-size: var(--title-fs);
+        font-weight: 900;
+    }
 
-    h1,h2,h3 {
+    h2,
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        color: var(--accent-color);
+    }
+
+
+    h1,
+    h2,
+    h3 {
         text-align: center;
     }
 
-    .navbar ul,
-    .nav-btn {
+    .header {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .navbar {
         display: none;
+
+        position: absolute;
+        top: 100%;
+
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid #eee;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: flex;
+
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-btn {
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .mobile-menu-icon {
+        margin-left: 200px;
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
     }
 
     .hero {
@@ -822,26 +875,14 @@ form textarea {
         padding: 48 px 0;
     }
 
-    .right-div{
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
+    .right-div {
+        height: 100%;
     }
 
     .right-div img {
         height: 150px;
     }
 
-    
-
-
-    .header>div:last-child {
-        display: none;
-    }
-
-    .navbar>ul,
-    nav-btn {
-        display: none;
-    }
 
     .top-div {
         flex-direction: column-reverse;
@@ -849,7 +890,6 @@ form textarea {
         /* gap: 32px; */
     }
 
-     
 
     .right-div img:nth-child(1),
     .right-div img:nth-child(3) {
@@ -872,11 +912,10 @@ form textarea {
 
     .sponsors {
         gap: 6px;
-
-        padding: 24px 40px;
-
+        overflow: hidden;
+        padding: 24px 80px;
     }
-     
+
 
     .sponsors_motion {
         display: flex;
@@ -899,14 +938,86 @@ form textarea {
         height: 20px;
     }
 
-     .form-row {
+    .affiliate_heading {
+        font-size: var(--font-title);
+        width: 370px;
+    }
+
+    .get_paid {
+        height: 392px;
+        /* width: 100%; */
+        border-radius: var(--b-radius);
+    }
+
+    .get_paid>h4,
+    .get_paid>p {
+        width: 370px;
+        font-size: .75rem;
+    }
+
+    .get_paid>h4 {
+        padding-top: 0;
+        font-size: 1rem;
+    }
+
+    .get_paid_second h4 {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+
+
+    .partner_section {
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+
+
+    .partner_content,
+    .partner_content>p {
+        width: 320px;
+    }
+
+    .partner_img_container>img {
+    height: 265px;
+    width: 100%;
+    background-position: center;
+    border-radius: var(--b-radius);
+}
+
+    .faq-container {
         flex-direction: column;
     }
+
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-right {
+        padding: 16px;
+    }
+
+    .contact-form-card {
+        padding: 20px;
+    }
+
+    .contact-form-card h3 {
+        font-size: 1rem;
+    }
+
+    .footer-top {
+        gap: 16px;
+        width: 90%;
+        flex-direction: column;
+    }
+
     .footer-subscribe {
-        flex-direction: column;
+        background: none;
     }
-    .footer-subscribe button {
-        padding: 10px;
+
+    .footer-subscribe input {
+        flex: none;
     }
 
 

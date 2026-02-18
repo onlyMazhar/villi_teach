@@ -1,4 +1,16 @@
+// Navbar function
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
 
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        
+        const icon = menuToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+});
 // FAQ function
 const faqItems = document.querySelectorAll(".faq-item");
 
